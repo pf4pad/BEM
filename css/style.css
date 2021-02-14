@@ -83,5 +83,154 @@ body {
 }
 
 .header__content-decor {
+  position: relative;
+  width: 26px;
+  height: 43px;
+  left: 0px;
+  top: 0px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 100px;
   margin-bottom: 60px;
+}
+
+.header__content-oval {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 8px;
+  top: 8px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.about {
+  background: #F6F8FA;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 150px 0;
+}
+
+.title {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #FCBB08;
+}
+
+.about__title {
+  min-width: 267px;
+  margin-right: 133px;
+  flex-basis: 33%;
+}
+
+.about__text {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  line-height: 24px;
+  min-width: 770px;
+}
+
+.expertise__title {
+  margin-top: 143px;
+  margin-bottom: 89px;
+}
+
+.expertise__content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 110px;
+}
+
+.expertise__content-items {
+  min-width: 370px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expertise__content-item {
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.expertise__content-text {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  line-height: 24px;
+  min-width: 770px;
+  flex-basis: 67%;
+}
+
+.expertise__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expertise__item {
+  display: flex;
+  align-items: start;
+}
+
+.expertise__item {
+  margin-right: 36px;
+}
+
+.expertise__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.expertise__item-img {
+  margin-right: 35px;
+}
+
+.expertise__item-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 4.29px;
+  color: #333333;
+  margin-bottom: 14px;
+}
+
+.expertise__item-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  min-width: 96px;
 }

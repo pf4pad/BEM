@@ -81,41 +81,130 @@ body
     color: #FCBB08
     margin-bottom: 180px
   &-decor
+    position: relative
+    width: 26px
+    height: 43px
+    left: 0px
+    top: 0px
+    border: 2px solid #FFFFFF
+    box-sizing: border-box
+    border-radius: 100px
     margin-bottom: 60px
+  &-oval
+    position: absolute
+    width: 6px
+    height: 6px
+    left: 8px
+    top: 8px
+    //top: 26px
+    border-radius: 50%
+    background: #FFFFFF
 .about
-
+  background: #F6F8FA
   &__inner
-
+    display: flex
+    justify-content: start
+    align-items: start
+    padding: 150px 0
 .title
+  position: relative
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 700
+  font-size: 48px
+  line-height: 75px
+  letter-spacing: -1.65px
+  color: #242121
+.title::after
+  content: ''
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 60px
+  height: 4px
+  background-color: #FCBB08
 
 .about__title
-
+  min-width: 267px
+  margin-right: 133px
+  flex-basis: 33%
 .about__text
-
-.about__description
+  font-family: Open Sans
+  font-size: 14px
+  font-style: normal
+  font-weight: 300
+  line-height: 24px
+  line-height: 24px
+  min-width: 770px
 
 .expertise
-
+  &__title
+    margin-top: 143px
+    margin-bottom: 89px
   &__content
-
+    display: flex
+    justify-content: start
+    align-items: start
+    margin-bottom: 110px
   &__content-items
-
+    min-width: 370px
+    margin-right: 30px
+    display: flex
+    flex-direction: column
   &__content-item
+    font-family: Open Sans
+    font-size: 11px
+    font-style: normal
+    font-weight: 400
+    line-height: 20px
+    letter-spacing: 1px
+  &__content-item::after
 
   &__content-text
-
+    font-family: Open Sans
+    font-size: 14px
+    font-style: normal
+    font-weight: 300
+    line-height: 24px
+    line-height: 24px
+    min-width: 770px
+    flex-basis: 67%
+  &__items
+    display: flex
+    justify-content: space-between
+    align-items: center
   &__items
 
   &__item
+    display: flex
+    align-items: start
 
+  &__item
+    margin-right: 36px
+  &__item:nth-child(3)
+
+    margin-right: 0
   &__item-img
-
+    margin-right: 35px
   &__item-box
 
   &__item-title
-
+    font-family: Raleway
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 4.29px
+    color: #333333
+    margin-bottom: 14px
   &__item-text
-
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 24px
+    color: #777777
+    min-width: 96px
   &__item--shout
 
 .features
