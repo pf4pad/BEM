@@ -20,13 +20,14 @@ body
   font-family: 'Raleway', sans-serif
 
 .header
-
+  height: 100vh
   &__top
 
 .container
   max-width: 1440px
   margin: 0 auto
   padding: 0 135px
+
 .header__top-inner
 
   display: flex
@@ -80,7 +81,7 @@ body
 
 .header__content
   background: center / 100% no-repeat url(../images/Header-bg.png)
-
+  height: 100vh
   &-inner
     display: flex
     flex-direction: column
@@ -93,8 +94,8 @@ body
     font-size: 100px
     line-height: 122px
     color: #FFFFFF
-    margin-top: 213px
-    margin-bottom: 18px
+    margin-top: calc( 100vh - 70vh)
+    margin-bottom: 43px
   &-desription
     font-family: Montserrat
     font-style: normal
@@ -103,7 +104,8 @@ body
     line-height: 20px
     letter-spacing: 2.74286px
     color: #FCBB08
-    margin-bottom: 180px
+    margin-bottom: calc( 100vh - 80vh)
+  &-oval
   &-decor
     position: relative
     width: 26px
@@ -113,7 +115,7 @@ body
     border: 2px solid #FFFFFF
     box-sizing: border-box
     border-radius: 100px
-    margin-bottom: 60px
+
   &-oval
     position: absolute
     width: 6px
@@ -178,7 +180,6 @@ body
     font-weight: 400
     line-height: 20px
     letter-spacing: 1px
-  &__content-item::after
 
   &__content-text
     font-family: Open Sans
@@ -192,13 +193,14 @@ body
   &__items
     display: flex
     justify-content: space-between
-    align-items: center
+
   &__items
     margin-bottom: 164px
+
   &__item
     display: flex
     align-items: start
-
+    width: 30%
   &__item
     margin-right: 36px
   &__item:nth-child(3)
@@ -235,8 +237,8 @@ body
   &__img
     width: 50%
   &__content
-
     padding-left: 130px
+    padding-bottom: 160px
   &__title
     font-family: Montserrat
     font-style: normal
@@ -245,7 +247,9 @@ body
     line-height: 75px
     letter-spacing: -1.65px
     color: #242121
+    margin-top: 100px
     margin-bottom: 85px
+
   &__text
     font-family: Open Sans
     font-style: normal
@@ -409,43 +413,173 @@ body
     padding-top: 144px
     margin-bottom: 91px
   &__items
-
+    display: flex
+    justify-content: space-between
+    padding-bottom: 162px
   &__item
-
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    text-align: center
+    width: 33%
+    background: #FFFFFF
+    position: relative
+    max-width: 370px
+    padding-bottom: 53px
   &__item-name
+    position: absolute
+    top: 0
+    left: 0
+    margin-top: 24px
+    margin-left: 24px
 
   &__item-rate
-
+    margin-top: 64px
+    margin-bottom: 51px
+    position: relative
+  &__item-cur
+    position: absolute
+    display: inline-block
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 300
+    font-size: 40px
+    line-height: 54px
+    top: 0
+    left: -25px
+    color: #242121
+  &__item-sum
+    display: inline
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 300
+    font-size: 80px
+    line-height: 109px
+    color: #242121
+  &__item-month
+    display: inline
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 27px
+    color: #242121
   &__list
-
+    margin-bottom: 69px
+    list-style: none
   &__list-item
-
-  &__btn
-
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #242121
+    margin-bottom: 30px
+  &__list-item:nth-child(5)
+    margin-bottom: 0
+  &__link
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    letter-spacing: 1.2px
+    color: #242121
+    background: #fff
+    cursor: pointer
+    padding: 10px
 .contact
 
+  &__inner
+    display: flex
+    justify-content: space-between
+    margin-top: 292px
+
   &__content
+    display: flex
+    flex-direction: column
+    width: 50%
+  &__title
+    ont-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 60px
+    line-height: 75px
 
+    letter-spacing: -1.65px
+
+    color: #242121
+    margin-bottom: 94px
   &__form
-
+    display: flex
+    flex-direction: column
+    max-width: 569px
   &__form-input
-
+    width: 100%
+    display: block
+    border: none
+    border-bottom: 3px solid #373A39
+    padding: 20px 0
+    margin-bottom: 50px
+    font-size: 16px
+    line-height: 19px
+    font-family: 'Roboto Condensed', sans-serif
+    font-weight: 400
+    outline: none
   &__form-textarea
-
+    width: 100%
+    display: block
+    border: none
+    border-bottom: 3px solid #373A39
+    padding: 20px 0
+    margin-bottom: 50px
+    font-size: 16px
+    line-height: 19px
+    font-family: 'Roboto Condensed', sans-serif
+    font-weight: 400
+    height: 156px
   &__form-btn
-
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 11px
+    line-height: 13px
+    display: flex
+    align-items: flex-end
+    text-align: center
+    letter-spacing: 2px
+    color: #FFFFFF
+    background: #242121
+    padding: 15px 58px
+    max-width: 240px
+    margin-bottom: 152px
   &__map
-
+    padding-right: -100px
 .footer
 
   &__content
-
+    display: flex
+    font-display: column
+    text-align: center
+    padding-top: 110px
+    padding-bottom: 60px
+    background: #373A39
 .logo--line
-
+  border-bottom: 2px solid #FCBB08
+  border-right-width: 150px
 .footer__social
+  display: flex
 
   &-link
-
+    text-decoration: uppercase
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
 .footer__adress
 
 .footer__phone
